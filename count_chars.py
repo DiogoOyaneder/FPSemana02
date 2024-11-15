@@ -1,9 +1,8 @@
-frase = (input(""))
+frase = input("")
 dicionario = {}
 for letra in frase:  
-    if not letra.isalnum():    
-        continue 
-    letra = letra.lower()         
+    if not letra.split():    
+        continue      
     if letra not in dicionario:
         dicionario[letra] = 1
     else:

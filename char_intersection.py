@@ -1,9 +1,7 @@
-frase1 = (input(""))
-frase2 = (input(""))
-a = frase1.split()
-b = frase2.split()
-intersecao = []
-for palavra in a:
-    if palavra in b and palavra not in intersecao:
-        intersecao.append(palavra)
-print (intersecao)
+frase1 = input("")
+frase2 = input("")
+a = set(frase1.split())
+b = set(frase2.split())
+c = a.intersection(b)
+d = " ".join(c)
+print(str(d))
